@@ -1,0 +1,31 @@
+{
+    "name": "deonpay/deonpay-php",
+    "description": "SDK oficial de PHP para la API de DeonPay (pagos en línea para México).",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["deonpay", "payments", "pagos", "mexico"],
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeonPay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeonPay\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
